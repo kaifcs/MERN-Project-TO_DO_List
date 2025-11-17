@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background: #0f1343;
+    --secondaryBackground: #bad6fe;
+    --text: #000000ee;
+    --text2: white;
+    --myColor: #0b085d;
+    --teal: #24feee;
+}
+body{
+    background: url(Background.jpg);
+    color: var(--text2);
+}
+.container{
+    display: flex;
+    margin: 115px auto 0 auto;
+    max-width: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.Number_of_Tasks_container{
+    padding: 18px;
+    border-radius: 12px;
+    border: 3.5px solid var(--myColor);
+    display: flex;
+    justify-content: space-between;
+    gap: 52px;
+    width: 100%;
+}
+.Container_Details{
+    width: 100%;
+}
+#Progress_Data_Bar{
+    width: 100%;
+    height: 16px;
+    background: var(--secondaryBackground);
+    border-radius: 16px;
+    margin-top: 21px;
+}
+#Progress_Data{
+    width: 0%;
+    height: 16px;
+    background-color: var(--teal);
+    border-radius: 16px;
+    transition: all .3s ease;
+}
+#Number_of_Tasks{
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: var(--myColor);
+    display: flex;
+    border-radius: 50%;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--text2);
+}
+.InputtingBar{
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 26px;
+    justify-content: space-between;
+    color: var(--text);
+
+}
+input{
+    flex: 1;
+    border-radius: 32px;
+    background: var(--secondaryBackground);
+    padding: 16px;
+    border: 3px solid var(--myColor);
+    outline: none;
+    color: var(--text);
+}
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--myColor);
+    align-items: center;
+    justify-content: center;
+    background-color: var(--myColor);
+    color: var(--text2);
+    font-size: 18px;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer; 
+}
+button:hover {
+    background-color: #15db0e;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 8px  8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.3s ease, color 0.3s ease;
+    position: relative;
+    border-radius: 6px;
+    width: 500px;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 0px;
+}
+ul li:hover {
+    background: var(--secondaryBackground);
+    color: var(--teal);
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(white.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 10px;
+}
+ul li.checked{
+    color: #15d825;
+    font-size: 25px;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+ul li.checked::before{
+    background-image: url(checked3.jpg);
+    content: '';
+
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: 16px;
+    left: 10px;
+
+}
+ul li span{
+    position: absolute;
+    right: 8px;
+    top: 82x;
+    bottom: 8px;
+    width: 25px;
+    height: 25px;
+    color: #f20707;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 25px;
+    transition: background 0.3s ease, color 0.3s ease;
+    background: var(--teal);
+}
+ul li.checked span{
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    bottom: 12px;
+    width: 25px;
+    height: 25px;
+    color: #f20707;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 25px;
+    transition: background 0.3s ease, color 0.3s ease;
+    background: var(--teal);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="Number_of_Tasks_container">
+        <div class="Container_Details">
+            <h1>Your To Do List</h1>
+            <p>Fantastic! Keep it up.</p>
+            <div id="Progress_Data_Bar">
+                <div id="Progress_Data"></div> 
+            </div>
+        </div>
+        <div class="Number_of_Tasks_Bar">
+            <p id="Number_of_Tasks">3 / 4</p>
+        </div>
+    </div>
+    <div class="InputtingBar">
+        <input type="text" id="Input_Bar_Box" placeholder="Add Your Task">
+        <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="Tasks_Container"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
