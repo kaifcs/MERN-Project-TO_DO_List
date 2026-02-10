@@ -7,7 +7,7 @@ const TasksContainer = document.getElementById("Tasks_Container");
 // Fetch all tasks on load
 async function showTask() {
     const res = await fetch(API);
-    const tasks = await res.json();
+    const tasks = await res.json(); 
     TasksContainer.innerHTML = ""; // clear existing
 
     tasks.forEach(task => addTaskToUI(task));  
